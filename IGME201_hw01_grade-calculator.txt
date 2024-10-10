@@ -1,0 +1,11 @@
+namespace grade-calculator {
+
+internal class Program {
+
+static void Main() {
+
+}
+
+}
+
+}
