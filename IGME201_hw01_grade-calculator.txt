@@ -63,13 +63,20 @@ Console.WriteLine(i + ": This grade is ouside of the range of 0-100...How did yo
 //if somehow grade is none of these value(?)
 Console.WriteLine("My code has failed or an improper value was put in grades. Drat.");
 }
+
 }
 
 // get the average from average
-average = average / grades.length
+average = average / grades.length;
 
+Console.WriteLine("Well " + studentname + ", it seems your average grade is " + average + ".");
+if (average == 100) {
+Console.Write(" On average, it seems you're pretty perfect, " + studentname + "! :D\n");
 }
 
+Console.WriteLine("All grades for " + studentname + " have been displayed. Have a nice day!");
+}
 
+}
 
 }
