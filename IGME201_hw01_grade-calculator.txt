@@ -12,6 +12,12 @@ internal class Program {
 
 static void Main() {
 
+//Declare string var studentname
+string studentname = "Pearl";
+
+// Declare 1D array of 10 ints
+int[] grades = new int[10];
+
 }
 
 }
