@@ -18,8 +18,8 @@ string studentname = "Pearl";
 // Declare 1D array, 10 integers long
 int[] grades = new int[100, 92, 87, 200, -20, 52, 82, 75, 67, 88];
 
-// Declare averageGrade, init to 0
-int averageGrade = 0;
+// Declare average, init to 0
+int average = 0;
 
 //Greet student, give grades
 Console.WriteLine("WELCOME " + studentname + ", YOU WONT ACADEMIC YOU.");
@@ -29,8 +29,8 @@ Console.WriteLine("Here are your grades:");
 foreach (int i in grades) {
 
 //add grade value to var each iteration
-averageGrade = averageGrade + i;
-Console.WriteLine("averageGrade + " + i + " = " + averageGrade);
+average = average + i;
+Console.WriteLine("average + " + i + " = " + average);
 
 if(i <=100 && i >=90) {
 //if grade is between 90 to 100 w nested if condition for 100%
@@ -65,8 +65,8 @@ Console.WriteLine("My code has failed or an improper value was put in grades. Dr
 }
 }
 
-// get the average from averageGrade
-averageGrade = averageGrade / grades.length
+// get the average from average
+average = average / grades.length
 
 }
 
