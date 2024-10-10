@@ -1,3 +1,11 @@
+/*
+
+Authored by: Pearl Walker
+Course: IGME.201.01
+Date: 13 October 2024
+
+*/
+
 namespace grade-calculator {
 
 internal class Program {
