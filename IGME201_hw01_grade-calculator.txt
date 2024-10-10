@@ -15,8 +15,11 @@ static void Main() {
 //Declare string var studentname
 string studentname = "Pearl";
 
-// Declare 1D array of 10 ints
-int[] grades = new int[10];
+// Declare 1D array, 10 integers long
+int[] grades = new int[100, 92, 87, 200, -20, 52, 82, 75, 67, 88];
+
+//Greet student, give grades
+Console.WriteLine("WELCOME " + studentname + ", YOU WONT ACADEMIC YOU.");
 
 }
 
