@@ -6,19 +6,19 @@ Date: 13 October 2024
 
 */
 
-namespace grade-calculator {
+namespace gradecalculator {
 
 internal class Program
 {
 
-    static void Main()
-    {
+        static void Main()
+        {
 
-        //Declare string var studentname
-        string studentname = "Pearl";
+            //Declare string var studentname
+            string studentname = "Pearl";
 
-        // Declare 1D array, 10 integers long
-        int[] grades = new int[100, 92, 87, 200, -20, 52, 82, 75, 67, 88];
+            // Declare 1D array, 10 integers long
+            int[] grades = {100, 92, 87, 200, -20, 52, 82, 75, 67, 88};
 
         // Declare average, init to 0
         int average = 0;
