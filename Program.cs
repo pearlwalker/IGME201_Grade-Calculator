@@ -33,12 +33,12 @@ internal class Program
 
             //add grade value to var each iteration
             average = average + i;
-            Console.WriteLine("average + " + i + " = " + average);
+            //Console.WriteLine("average + " + i + " = " + average);
 
             if (i <= 100 && i >= 90)
             {
                 //if grade is between 90 to 100 w nested if condition for 100%
-                Console.WriteLine(i + ": This grade is an A!);
+                Console.WriteLine(i + ": This grade is an A!");
             if (i == 100)
                 {
                     Console.Write(" And not only an A, but a perfect score!\n");
@@ -84,7 +84,7 @@ internal class Program
         }
 
         // get the average from average
-        average = average / grades.length;
+        average = average / 10;
 
         Console.WriteLine("Well " + studentname + ", it seems your average grade is " + average + ".");
         if (average == 100)
