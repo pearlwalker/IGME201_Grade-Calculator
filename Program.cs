@@ -18,7 +18,7 @@ internal class Program
             string studentname = "Pearl";
 
             // Declare 1D array, 10 integers long
-            int[] grades = {100, 92, 87, 2000, -20, 52, 82, 75, 67, 88};
+            int[] grades = {92, 100, 87, 2000, 52, -20, 82, 75, 67, 88};
 
             //Int to count grades values within range
             int values = 0;
@@ -26,9 +26,24 @@ internal class Program
         // Declare average, init to 0
         float average = 0;
 
-        //Greet student, give grades
-        Console.WriteLine("WELCOME " + studentname + ", YOU WONT ACADEMIC YOU.");
-        Console.WriteLine("It seems you've taken " + grades.Length + " classes!");
+            //Greet student
+            Console.WriteLine("Welcome " + studentname + "!");
+            Console.WriteLine("This is the GRADE CALCULATOR, where we turn your number grades into letter grades.\n");
+
+        //List grades, mention number of courses taken
+        Console.WriteLine("It seems you've taken " + grades.Length + " classes this semester!");
+        Console.Write("With scores of ");
+
+        //Print grades on their own
+        foreach(int i in grades) {
+                if (i != grades[grades.Length-1]) {
+                    Console.Write(i + ", ");
+                    
+                } else {   
+                    Console.Write("and "+ i + " to show for it.\n\n");
+                }
+            }
+            Console.WriteLine("Let's see those letter grades " + studentname + ", you wont academic you:");
 
         //Loop through grades[]
         foreach (int i in grades)
@@ -40,48 +55,47 @@ internal class Program
             if (i == 100)
                     {
                         //if grade is between 90 to 100 w nested if condition for 100%
-                        Console.WriteLine(i + " is an A!");
-                        Console.Write("And not only an A, but a perfect score!\n");
+                        Console.WriteLine(i + " is an A" + " (And not only an A, but a perfect score!)");
                 } else
                     {
-                        Console.WriteLine(i + " is an A!");
+                        Console.WriteLine(i + " is an A");
                     }
 
             }
             else if (i < 90 && i >= 80)
             {
                 //if grade is between 80 and 90
-                Console.WriteLine(i + " is a B.");
+                Console.WriteLine(i + " is a B");
 
             }
             else if (i < 80 && i >= 70)
             {
                 //if grade is between 70 and 80
-                Console.WriteLine(i + " is a C.");
+                Console.WriteLine(i + " is a C");
 
             }
             else if (i < 70 && i >= 65)
             {
                 //if grade is between 65 and 70
-                Console.WriteLine(i + " is a D.");
+                Console.WriteLine(i + " is a D");
 
             }
             else if (i < 65 && i >= 0)
             {
                 //if grade is between 65 and 0
-                Console.WriteLine(i + " is an F.");
+                Console.WriteLine(i + " is an F");
 
             }
             else if (i > 100 || i < 0)
             {
                 //outside of the range of 0-100
-                Console.WriteLine(i + " is...impossible?");
+                Console.WriteLine(i + " is out of range so we'll ignore it");
 
             }
             else
             {
                 //if somehow grade is none of these value(?)
-                Console.WriteLine("My code has failed or an improper value was put in grades. Drat.");
+                Console.WriteLine("This message should be impossible");
             }
 
         }
@@ -89,15 +103,12 @@ internal class Program
         foreach(int i in grades)
             {
                 if (i <= 100 && i >= 0)
-                {
-                    Console.WriteLine(i);
+                {   
                     average = average + i;
                     values++;
-                    Console.WriteLine(values);
-                } else
-                {
-                    //
-                }
+                    //Console.WriteLine(i);
+                    //Console.WriteLine(values);
+                } 
             }
 
         // get the average from average
