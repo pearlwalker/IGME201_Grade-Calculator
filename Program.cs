@@ -56,7 +56,8 @@ internal class Program
                     {
                         //if grade is between 90 to 100 w nested if condition for 100%
                         Console.WriteLine(i + " is an A" + " (And not only an A, but a perfect score!)");
-                } else
+                } 
+                 else
                     {
                         Console.WriteLine(i + " is an A");
                     }
@@ -100,27 +101,49 @@ internal class Program
 
         }
         //calculate average, exclude outliers
-        foreach(int i in grades)
+        foreach(int i in grades) 
             {
-                if (i <= 100 && i >= 0)
+                if (i <= 100 && i >= 0) 
                 {   
                     average = average + i;
                     values++;
-                    //Console.WriteLine(i);
-                    //Console.WriteLine(values);
                 } 
             }
 
         // get the average from average
         average = average / values;
 
-        Console.WriteLine("Well " + studentname + ", it seems your average grade is " + average + ".");
-        if (average == 100)
-        {
-            Console.Write(" On average, it seems you're pretty perfect, " + studentname + "! :D\n");
-        }
 
-        Console.WriteLine("All grades for " + studentname + " have been displayed. Have a nice day!");
+        //Tell student their average grade (number then letter)
+        Console.WriteLine("\nWell " + studentname + ", it seems your average number grade is " + average + ".");
+
+            Console.Write("And a ");
+        if (average <=100 && average >= 90) 
+            {
+                Console.WriteLine(average + " means you have the letter grade of A");
+            } 
+            else if (average < 90 && average >= 80)
+            {
+                Console.WriteLine(average + " means you have the letter grade of B");
+            }
+            else if (average < 80 && average >= 70)
+            {
+                Console.WriteLine(average + " means you have the letter grade of C");
+            }
+            else if (average < 70 && average >= 65)
+            {
+                Console.WriteLine(average + " means you have the letter grade of D");
+            }
+            else if (average < 65 && average >= 0)
+            {
+                Console.WriteLine(average + " means you have the letter grade of F");
+            } 
+            else
+            {
+                Console.WriteLine("I guess you don't have a grade? Something went wrong here..");
+            }
+
+        Console.WriteLine("\nAll grades for " + studentname + " have been displayed. Have a nice day!");
     }
 
 }
